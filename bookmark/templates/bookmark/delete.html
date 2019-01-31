@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}-Delete{% endblock %}
+
+
+{% block content %}
+
+<span> Do you want to delete {{object.name}}?</span>
+<form action="" method="post">
+    {% csrf_token %}
+    <input type="submit" value="삭제 확인">
+</form>
+
+
+{% endblock %}
